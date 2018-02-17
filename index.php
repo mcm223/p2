@@ -38,9 +38,9 @@
             <input type='text' name='searchTerm'>
         </label>
 
-        <label><input type='checkbox' name='days[]' value='mon'>Should all results include ebook versions?</label>
+        <label><input type='checkbox' name='days[]' value='mon'> Should all results include ebook versions?</label>
 
-        <input type='submit' value='Search'>
+        <input type='submit' value='Search' class='btn btn-primary btn-sm'>
 
     </form>
 </div>
