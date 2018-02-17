@@ -32,7 +32,7 @@ require 'index-logic.php';
     <form method='GET' action='index.php'>
 
         <label for='genre'>Select your preferred genre:</label>
-        <select name='genre' id='day'>
+        <select name='genre' id='genre'>
             <option value='scifi'>Science Fiction</option>
             <option value='history'>History</option>
             <option value='romance'>Romance</option>
