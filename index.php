@@ -17,7 +17,7 @@ require 'index-logic.php';
 </head>
 <body>
 <!-- dump for debugging -->
-<?= dump($book);?>
+<?= dump($genre); dump($pageLimit); dump($ebooks);?>
 
 <div class="container-fluid" id="container">
     <h1 class="display-3">Blind Date with a Book</h1>
@@ -33,12 +33,12 @@ require 'index-logic.php';
 
         <label for='genre'>Select your preferred genre:</label>
         <select name='genre' id='day'>
-            <option value='choose'>Choose one...</option>
             <option value='scifi'>Science Fiction</option>
             <option value='history'>History</option>
             <option value='romance'>Romance</option>
             <option value='genfic'>General Fiction</option>
             <option value='fantasy'>Fantasy</option>
+            <option value='all'>Surprise Me!</option>
         </select>
 
         <label>Specify your maximum length in pages:

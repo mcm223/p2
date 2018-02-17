@@ -44,7 +44,7 @@ class Form
     /**
      * Determines if a value is present in the request
      * @param $name
-     * @return boolean
+     * @return bool
      */
     public function has($name)
     {
@@ -52,7 +52,7 @@ class Form
     }
 
     /**
-     * Use in display files to prefill the values of fields if those values are in the request.
+     * Use in display files to pre-fill the values of fields if those values are in the request.
      * Second optional parameter lets you set a default value if value does not exist
      * @param $field
      * @param string $default
