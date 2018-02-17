@@ -22,23 +22,23 @@
         </p>
     </div>
     <h2 class="display-4">Book Preferences:</h2>
-    <form method='GET' action='search.php'>
+    <form method='GET' action='index.php'>
 
-        <label for='day'>Select your preferred genre:</label>
-        <select name='day' id='day'>
+        <label for='genre'>Select your preferred genre:</label>
+        <select name='genre' id='day'>
             <option value='choose'>Choose one...</option>
-            <option value='mon'>Science Fiction</option>
-            <option value='tue'>History</option>
-            <option value='wed'>Romance</option>
-            <option value='thu'>General Fiction</option>
-            <option value='fri'>Fantasy</option>
+            <option value='scifi'>Science Fiction</option>
+            <option value='history'>History</option>
+            <option value='romance'>Romance</option>
+            <option value='genfic'>General Fiction</option>
+            <option value='fantasy'>Fantasy</option>
         </select>
 
         <label>Specify your maximum length in pages:
-            <input type='text' name='searchTerm'>
+            <input type='text' name='pageLimit'>
         </label>
 
-        <label><input type='checkbox' name='days[]' value='mon'> Should all results include ebook versions?</label>
+        <label><input type='checkbox' name='ebooks' value='true'> Exclude books without ebook version?</label>
 
         <input type='submit' value='Search' class='btn btn-primary btn-sm'>
 
