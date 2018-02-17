@@ -16,5 +16,10 @@ $book = new Book('books.json');
 
 # Get search criteria from the form
 $genre = $form->get('genre','');
-$pageLimit = $form->get('pageLimit');
-$ebooks = $form->has('ebooks');
+$pageLimit = $form->get('pageLimit', '');
+$ebook = $form->has('ebooks');
+
+# Return a list of potential books
+
+
+# Pick a random entry in the list of potential books

@@ -16,9 +16,6 @@ require 'index-logic.php';
     <link rel="stylesheet" href="css/p2_style.css">
 </head>
 <body>
-<!-- dump for debugging -->
-<?= dump($genre); dump($pageLimit); dump($ebooks);?>
-
 <div class="container-fluid" id="container">
     <h1 class="display-3">Blind Date with a Book</h1>
     <img src="images/me2.jpg" alt="Image of Matt" class="rounded-circle">
@@ -45,7 +42,7 @@ require 'index-logic.php';
             <input type='text' name='pageLimit'>
         </label>
 
-        <label><input type='checkbox' name='ebooks' value='true'> Exclude books without ebook version?</label>
+        <label><input type='checkbox' name='ebook' value='true'> Exclude books without ebook version?</label>
 
         <input type='submit' value='Search' class='btn btn-primary btn-sm'>
 

@@ -4,6 +4,7 @@
     "author": "F. Scott Fitzgerald",
     "genre": "fiction",
     "length": 120,
+    "hasEbook": true,
     "cover_url": "http://img2.imagesbn.com/p/9780743273565_p0_v4_s114x166.JPG",
     "purchase_url": "http://www.barnesandnoble.com/w/the-great-gatsby-francis-scott-fitzgerald/1116668135?ean=9780743273565"
   },
@@ -12,6 +13,7 @@
     "author": "Sylvia Plath",
     "genre": "fiction",
     "length": 350,
+    "hasEbook": false,
     "cover_url": "http://img1.imagesbn.com/p/9780061148514_p0_v2_s114x166.JPG",
     "purchase_url": "http://www.barnesandnoble.com/w/bell-jar-sylvia-plath/1100550703?ean=9780061148514"
   },
@@ -20,6 +22,7 @@
     "author": "Maya Angelou",
     "genre": "fiction",
     "length": 420,
+    "hasEbook": true,
     "cover_url": "http://img1.imagesbn.com/p/9780345514400_p0_v1_s114x166.JPG",
     "purchase_url": "http://www.barnesandnoble.com/w/i-know-why-the-caged-bird-sings-maya-angelou/1100392955?ean=9780345514400"
   }

@@ -6,28 +6,44 @@ class Book
 {
     private $books;
 
+    # Fetch list of books
     public function __construct($dataFile)
     {
         $booksJson = file_get_contents($dataFile);
         $this->books = json_decode($booksJson, true);
     }
 
+    # Return all entries
     public function getAll()
     {
         return $this->books;
     }
 
-    public function getByTitle($title, $caseSensitive = false)
+    # Return a list of books that match the search criteria
+    public function getByTitle($genre, $pageLimit = 0, $ebook = false)
     {
         $results = [];
 
         foreach ($this->books as $bookTitle => $book) {
-            if ($caseSensitive) {
-                $match = $bookTitle == $title;
+
+            # Does the genre match?
+            if ($genre == 'all') {
+                $match = true;
             } else {
-                $match = strtolower($bookTitle) == strtolower($title);
+                $match = $genre == $book['genre'];
             }
 
+            # Does the book's length exceed the specified page limit?
+            if ($pageLimit > 0) {
+                $match = $book['length'] <= $pageLimit;
+            }
+
+            # Does the book need to have an ebook available?
+            if ($ebook) {
+                $match = $ebook == $book['hasEbook'];
+            }
+
+            # If all of the above are true, then return the book as an option
             if ($match) {
                 $results[$bookTitle] = $book;
             }
