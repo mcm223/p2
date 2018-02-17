@@ -27,11 +27,11 @@
         <label for='day'>Select your preferred genre:</label>
         <select name='day' id='day'>
             <option value='choose'>Choose one...</option>
-            <option value='mon'>Monday</option>
-            <option value='tue'>Tuesday</option>
-            <option value='wed'>Wednesday</option>
-            <option value='thu'>Thursday</option>
-            <option value='fri'>Friday</option>
+            <option value='mon'>Science Fiction</option>
+            <option value='tue'>History</option>
+            <option value='wed'>Romance</option>
+            <option value='thu'>General Fiction</option>
+            <option value='fri'>Fantasy</option>
         </select>
 
         <label>Specify your maximum length in pages:
