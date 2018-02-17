@@ -1,3 +1,7 @@
+<?php
+require 'helpers.php';
+require 'index-logic.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +16,9 @@
     <link rel="stylesheet" href="css/p2_style.css">
 </head>
 <body>
+<!-- dump for debugging -->
+<?= dump($book);?>
+
 <div class="container-fluid" id="container">
     <h1 class="display-3">Blind Date with a Book</h1>
     <img src="images/me2.jpg" alt="Image of Matt" class="rounded-circle">
