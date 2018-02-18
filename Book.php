@@ -34,12 +34,12 @@ class Book
             }
 
             # Does the book's length exceed the specified page limit?
-            if ($pageLimit > 0) {
+            if ($match && $pageLimit > 0) {
                 $match = $book['length'] <= $pageLimit;
             }
 
             # Does the book need to have an ebook available?
-            if ($ebook) {
+            if ($match && $ebook) {
                 $match = $ebook == $book['hasEbook'];
             }
 

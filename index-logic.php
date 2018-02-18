@@ -20,6 +20,6 @@ $pageLimit = $form->get('pageLimit', '');
 $ebook = $form->has('ebooks');
 
 # Return a list of potential books
-
+$potentialBooks = $book->getByTitle($genre,$pageLimit,$ebook);
 
 # Pick a random entry in the list of potential books
