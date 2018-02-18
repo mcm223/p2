@@ -16,7 +16,7 @@ require 'index-logic.php';
     <link rel="stylesheet" href="css/p2_style.css">
 </head>
 <body>
-<?= dump($potentialBooks); ?>
+<?= dump($output); ?>
 <div class="container-fluid" id="container">
     <h1 class="display-3">Blind Date with a Book</h1>
     <img src="images/me2.jpg" alt="Image of Matt" class="rounded-circle">
@@ -31,12 +31,12 @@ require 'index-logic.php';
 
         <label for='genre'>Select your preferred genre:</label>
         <select name='genre' id='genre'>
+            <option value='all'>Surprise Me!</option>
             <option value='scifi'>Science Fiction</option>
             <option value='history'>History</option>
             <option value='romance'>Romance</option>
             <option value='genfic'>General Fiction</option>
             <option value='fantasy'>Fantasy</option>
-            <option value='all'>Surprise Me!</option>
         </select>
 
         <label>Specify your maximum length in pages:
@@ -45,7 +45,7 @@ require 'index-logic.php';
 
         <label><input type='checkbox' name='ebook' value='true'> Exclude books without ebook version?</label>
 
-        <input type='submit' value='Search' class='btn btn-primary btn-sm'>
+        <input type='submit' value='Get Me a Date!' class='btn btn-primary btn-sm'>
 
     </form>
 </div>
