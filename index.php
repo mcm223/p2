@@ -60,13 +60,13 @@ require 'index-logic.php';
         </div>
     <?php else: ?>
         <?php if ($haveResults): ?>
-                <div class='book'>
-                    <div class='title'><?= $output ?></div>
-                    <div class='author'>by <?= $potentialBooks[$output]['author'] ?></div>
-                    <img src='<?= $potentialBooks[$output]['cover_url'] ?>' alt='Cover photo for the book <?= $output ?>'>
-                </div>
+            <div class='book'>
+                <div class='title'><?= $output ?></div>
+                <div class='author'>by <?= $potentialBooks[$output]['author'] ?></div>
+                <img src='<?= $potentialBooks[$output]['cover_url'] ?>' alt='Cover photo for the book <?= $output ?>'>
+            </div>
 
-        <?php elseif (!$haveResults): ?>
+        <?php elseif ($haveResults): ?>
             <div class='alert alert-danger'>No results</div>
         <?php endif; ?>
 
