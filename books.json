@@ -61,5 +61,14 @@
     "hasEbook": false,
     "cover_url": "https://images-na.ssl-images-amazon.com/images/I/91zSt6QkbmL.jpg",
     "purchase_url": "https://www.amazon.com/dp/0393313026"
+  },
+  "Dune": {
+    "id": 7,
+    "author": "Frank Herbert",
+    "genre": "fantasy",
+    "length": 896,
+    "hasEbook": true,
+    "cover_url": "https://images-na.ssl-images-amazon.com/images/I/518lXhMAXNL.jpg",
+    "purchase_url": "https://www.amazon.com/dp/0441172717"
   }
 }

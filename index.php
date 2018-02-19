@@ -15,39 +15,65 @@ require 'index-logic.php';
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/p2_style.css">
 </head>
-<body>
-<div class="container-fluid" id="container">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="http://p2.mcm223.me/">Blind Date with a Book</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="http://p2.mcm223.me/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/mcm223/p2" target='_blank'>GitHub</a>
+            </li>
+    </div>
+</nav>
+<!-- Body -->
+<div class='container-fluid' id='header'>
     <h1 class="display-3">Blind Date with a Book</h1>
     <img src="images/me2.jpg" alt="Image of Matt" class="rounded-circle">
-    <h2 class="display-4">How Does it Work?</h2>
+</div>
+<body>
+
+<div class="container-fluid" id="container">
+
+    <h4>How Does it Work?</h4>
     <div id="bio">
         <p>
             Enter your desired book traits below, and then hit search. The result will be a new book for you to try.
         </p>
     </div>
     <!-- Start user input section -->
-    <h2 class="display-4">Book Preferences:</h2>
+    <h4>Book Preferences:</h4>
+
     <form method='GET' action='index.php'>
+        <div class='form-group'>
 
-        <label for='genre'>Select your preferred genre:</label>
-        <select name='genre' id='genre'>
-            <option value='all' <?= ($genre == 'all') ? 'selected' : '' ?>>Surprise Me!</option>
-            <option value='scifi' <?= ($genre == 'scifi') ? 'selected' : '' ?>>Science Fiction</option>
-            <option value='history' <?= ($genre == 'history') ? 'selected' : '' ?>>History</option>
-            <option value='fiction' <?= ($genre == 'fiction') ? 'selected' : '' ?>>General Fiction</option>
-            <option value='fantasy' <?= ($genre == 'fantasy') ? 'selected' : '' ?>>Fantasy</option>
-        </select>
-
-        <label>Specify your maximum length in pages:
-            <input type='text' name='pageLimit' value='<?= ($pageLimit == '') ? 0 : $pageLimit ?>'>
-        </label>
-
-        <label><input type='checkbox' name='ebook' value='true' <?= ($ebook == 'true') ? 'checked' : '' ?>> Exclude
-            books without ebook version?</label>
-
-        <input type='submit' value='Get Me a Date!' class='btn btn-primary btn-sm'>
-
+            <label for='genre'>Select your preferred genre:</label>
+            <select name='genre' id='genre' class='form-control'>
+                <option value='all' <?= ($genre == 'all') ? 'selected' : '' ?>>Surprise Me!</option>
+                <option value='scifi' <?= ($genre == 'scifi') ? 'selected' : '' ?>>Science Fiction</option>
+                <option value='history' <?= ($genre == 'history') ? 'selected' : '' ?>>History</option>
+                <option value='fiction' <?= ($genre == 'fiction') ? 'selected' : '' ?>>General Fiction</option>
+                <option value='fantasy' <?= ($genre == 'fantasy') ? 'selected' : '' ?>>Fantasy</option>
+            </select>
+        </div>
+        <div class='form-group'>
+            <label>Specify your maximum length in pages:
+                <input type='text' name='pageLimit' class='form-control'
+                       value='<?= ($pageLimit == '') ? 0 : $pageLimit ?>'>
+            </label>
+        </div>
+        <div class='form-group'>
+            <label><input type='checkbox' class='form-check-input' name='ebook'
+                          value='true' <?= ($ebook == 'true') ? 'checked' : '' ?>> Exclude
+                books without ebook version?</label>
+            <div id='submit'>
+                <input type='submit' value='Get Me a Date!' class='btn btn-primary btn-md'>
+            </div>
+        </div>
     </form>
+
     <!-- Start output section -->
     <?php if ($form->hasErrors) : ?>
         <div class='alert alert-danger'>
@@ -72,7 +98,7 @@ require 'index-logic.php';
             </div>
 
         <?php elseif ($genre): ?>
-            <div class='alert alert-danger'>No results</div>
+            <div class='alert alert-danger'>Oops, no results! Try again with different criteria.</div>
         <?php endif; ?>
 
     <?php endif; ?>
