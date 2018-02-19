@@ -17,7 +17,7 @@ $book = new Book('books.json');
 
 # Variables
 $potentialBooks = [];
-$output;
+$output = [];
 
 # Get search criteria from the form
 $genre = $form->get('genre', '');
@@ -28,7 +28,7 @@ $ebook = $form->has('ebooks');
 if ($form->isSubmitted()) {
     $errors = $form->validate(
         [
-            'pageLimit' => 'numeric'
+            'pageLimit' => 'required|numeric'
         ]
     );
     if (!$form->hasErrors) {

@@ -16,7 +16,7 @@ require 'index-logic.php';
     <link rel="stylesheet" href="css/p2_style.css">
 </head>
 <body>
-<?= dump($output); ?>
+<?= dump($potentialBooks); dump($output); dump($errors); ?>
 <div class="container-fluid" id="container">
     <h1 class="display-3">Blind Date with a Book</h1>
     <img src="images/me2.jpg" alt="Image of Matt" class="rounded-circle">
@@ -40,7 +40,7 @@ require 'index-logic.php';
         </select>
 
         <label>Specify your maximum length in pages:
-            <input type='text' name='pageLimit'>
+            <input type='text' name='pageLimit' value='0'>
         </label>
 
         <label><input type='checkbox' name='ebook' value='true'> Exclude books without ebook version?</label>

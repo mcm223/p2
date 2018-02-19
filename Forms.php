@@ -164,7 +164,7 @@ class Form
         $language = [
             'alphaNumeric' => ' can only contain letters or numbers.',
             'alpha' => ' can only contain letters.',
-            'numeric' => ' can only contain numbers.',
+            'numeric' => ' can only contain positive numbers.',
             'required' => ' can not be blank.',
             'email' => ' is not a valid email address.',
             'min' => ' has to be greater than ' . $parameter . '.',

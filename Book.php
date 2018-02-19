@@ -33,7 +33,7 @@ class Book
                 $match = $genre == $book['genre'];
             }
 
-            # Does the book's length exceed the specified page limit?
+            # Does the book's length exceed the specified page limit
             if ($match && $pageLimit > 0) {
                 $match = $book['length'] <= $pageLimit;
             }
