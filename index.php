@@ -26,6 +26,7 @@ require 'index-logic.php';
             <li class="nav-item">
                 <a class="nav-link" href="https://github.com/mcm223/p2" target='_blank'>GitHub</a>
             </li>
+        </ul>
     </div>
 </nav>
 <!-- Body -->
