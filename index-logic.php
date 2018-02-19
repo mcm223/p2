@@ -18,6 +18,7 @@ $book = new Book('books.json');
 # Variables
 $potentialBooks = [];
 $output = [];
+$haveResults = false;
 
 # Get search criteria from the form
 $genre = $form->get('genre', '');

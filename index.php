@@ -25,8 +25,8 @@ require 'index-logic.php';
             Enter your desired book traits below, and then hit search. The result will be a new book for you to try.
         </p>
     </div>
+    <!-- Start user input section -->
     <h2 class="display-4">Book Preferences:</h2>
-    <?= $ebook ?>
     <form method='GET' action='index.php'>
 
         <label for='genre'>Select your preferred genre:</label>
@@ -43,11 +43,34 @@ require 'index-logic.php';
             <input type='text' name='pageLimit' value='<?= ($pageLimit == '') ? 0 : $pageLimit ?>'>
         </label>
 
-        <label><input type='checkbox' name='ebook' value='true' <?= ($ebook == 'true') ? 'checked' : '' ?>> Exclude books without ebook version?</label>
+        <label><input type='checkbox' name='ebook' value='true' <?= ($ebook == 'true') ? 'checked' : '' ?>> Exclude
+            books without ebook version?</label>
 
         <input type='submit' value='Get Me a Date!' class='btn btn-primary btn-sm'>
 
     </form>
+    <!-- Start output section -->
+    <?php if ($form->hasErrors) : ?>
+        <div class='alert alert-danger'>
+            <ul>
+                <?php foreach ($errors as $error) : ?>
+                    <li><?= $error ?></li>
+                <?php endforeach; ?>
+            </ul>
+        </div>
+    <?php else: ?>
+        <?php if ($haveResults): ?>
+                <div class='book'>
+                    <div class='title'><?= $output ?></div>
+                    <div class='author'>by <?= $potentialBooks[$output]['author'] ?></div>
+                    <img src='<?= $potentialBooks[$output]['cover_url'] ?>' alt='Cover photo for the book <?= $output ?>'>
+                </div>
+
+        <?php elseif (!$haveResults): ?>
+            <div class='alert alert-danger'>No results</div>
+        <?php endif; ?>
+
+    <?php endif; ?>
 </div>
 </body>
 </html>
