@@ -66,7 +66,7 @@ require 'index-logic.php';
                 <img src='<?= $potentialBooks[$output]['cover_url'] ?>' alt='Cover photo for the book <?= $output ?>'>
             </div>
 
-        <?php elseif ($haveResults): ?>
+        <?php elseif ($genre): ?>
             <div class='alert alert-danger'>No results</div>
         <?php endif; ?>
 
