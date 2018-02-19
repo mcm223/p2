@@ -22,7 +22,7 @@ $output = [];
 # Get search criteria from the form
 $genre = $form->get('genre', '');
 $pageLimit = $form->get('pageLimit', 0);
-$ebook = $form->has('ebooks');
+$ebook = $form->has('ebook');
 
 # Get a list of potential books
 if ($form->isSubmitted()) {
