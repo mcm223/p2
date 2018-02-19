@@ -15,6 +15,7 @@ require 'index-logic.php';
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/p2_style.css">
 </head>
+<body>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="http://p2.mcm223.me/">Blind Date with a Book</a>
@@ -34,10 +35,7 @@ require 'index-logic.php';
     <h1 class="display-3">Blind Date with a Book</h1>
     <img src="images/me2.jpg" alt="Image of Matt" class="rounded-circle">
 </div>
-<body>
-
 <div class="container-fluid" id="container">
-
     <h4>How Does it Work?</h4>
     <div id="bio">
         <p>
