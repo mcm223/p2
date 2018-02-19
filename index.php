@@ -20,7 +20,7 @@ require 'index-logic.php';
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="http://p2.mcm223.me/">Blind Date with a Book</a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
                 <a class="nav-link" href="http://p2.mcm223.me/">Home <span class="sr-only">(current)</span></a>
