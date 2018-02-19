@@ -4,6 +4,7 @@ require 'index-logic.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<link rel="icon" href="images/books-icon.png">
 <head>
     <title>Blind Date with a Book</title>
     <!-- Required meta tags -->
@@ -32,8 +33,8 @@ require 'index-logic.php';
 </nav>
 <!-- Body -->
 <div class='container-fluid' id='header'>
-    <h1 class="display-3">Blind Date with a Book</h1>
-    <img src="images/me2.jpg" alt="Image of Matt" class="rounded-circle">
+    <img src="images/books-icon.png" alt="Book Icon">
+    <h1 class="display-4">Blind Date with a Book</h1>
 </div>
 <div class="container-fluid" id="container">
     <h4>How Does it Work?</h4>

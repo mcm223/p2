@@ -21,6 +21,10 @@ img {
     margin: 20px 0px;
 }
 
+h1 {
+    margin-bottom: 50px;
+}
+
 label, legend {
     display: block;
     margin-top: 20px;
