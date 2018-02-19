@@ -34,8 +34,7 @@ require 'index-logic.php';
             <option value='all' <?= ($genre == 'all') ? 'selected' : '' ?>>Surprise Me!</option>
             <option value='scifi' <?= ($genre == 'scifi') ? 'selected' : '' ?>>Science Fiction</option>
             <option value='history' <?= ($genre == 'history') ? 'selected' : '' ?>>History</option>
-            <option value='romance' <?= ($genre == 'romance') ? 'selected' : '' ?>>Romance</option>
-            <option value='genfic' <?= ($genre == 'genfic') ? 'selected' : '' ?>>General Fiction</option>
+            <option value='fiction' <?= ($genre == 'fiction') ? 'selected' : '' ?>>General Fiction</option>
             <option value='fantasy' <?= ($genre == 'fantasy') ? 'selected' : '' ?>>Fantasy</option>
         </select>
 
@@ -60,10 +59,16 @@ require 'index-logic.php';
         </div>
     <?php else: ?>
         <?php if ($haveResults): ?>
-            <div class='book'>
-                <div class='title'><?= $output ?></div>
-                <div class='author'>by <?= $potentialBooks[$output]['author'] ?></div>
-                <img src='<?= $potentialBooks[$output]['cover_url'] ?>' alt='Cover photo for the book <?= $output ?>'>
+            <div class='card'>
+                <div class='card-header'>Your Blind Date Book Is:</div>
+                <img class='card-img-top' src='<?= $potentialBooks[$output]['cover_url'] ?>'
+                     alt='Cover photo for the book <?= $output ?>'>
+                <div class='card-body'>
+                    <h5 class='card-title'><?= $output ?></h5>
+                    <p class='card-text'>by <?= $potentialBooks[$output]['author'] ?></p>
+                    <a href='<?= $potentialBooks[$output]['purchase_url'] ?>' class='card-link' target='_blank'>Buy
+                        me!</a>
+                </div>
             </div>
 
         <?php elseif ($genre): ?>

@@ -1,29 +1,65 @@
 {
-  "The Great Gatsby": {
+  "The Lord of the Rings": {
     "id": 0,
-    "author": "F. Scott Fitzgerald",
-    "genre": "scifi",
-    "length": 120,
+    "author": "J.R.R. Tolkein",
+    "genre": "fantasy",
+    "length": 1178,
     "hasEbook": true,
-    "cover_url": "http://img2.imagesbn.com/p/9780743273565_p0_v4_s114x166.JPG",
-    "purchase_url": "http://www.barnesandnoble.com/w/the-great-gatsby-francis-scott-fitzgerald/1116668135?ean=9780743273565"
+    "cover_url": "https://images-na.ssl-images-amazon.com/images/I/51eq24cRtRL.jpg",
+    "purchase_url": "http://www.amazon.com/dp/0618640150"
   },
-  "The Bell Jar": {
+  "The Hitchhiker's Guide to the Galaxy": {
     "id": 1,
-    "author": "Sylvia Plath",
-    "genre": "fiction",
-    "length": 350,
-    "hasEbook": false,
-    "cover_url": "http://img1.imagesbn.com/p/9780061148514_p0_v2_s114x166.JPG",
-    "purchase_url": "http://www.barnesandnoble.com/w/bell-jar-sylvia-plath/1100550703?ean=9780061148514"
-  },
-  "I Know Why the Caged Bird Sings": {
-    "id": 2,
-    "author": "Maya Angelou",
-    "genre": "fiction",
-    "length": 420,
+    "author": "Douglas Adams",
+    "genre": "scifi",
+    "length": 224,
     "hasEbook": true,
-    "cover_url": "http://img1.imagesbn.com/p/9780345514400_p0_v1_s114x166.JPG",
-    "purchase_url": "http://www.barnesandnoble.com/w/i-know-why-the-caged-bird-sings-maya-angelou/1100392955?ean=9780345514400"
+    "cover_url": "https://images-na.ssl-images-amazon.com/images/I/51KIDgdSDfL.jpg",
+    "purchase_url": "https://www.amazon.com/dp/0345391802"
+  },
+  "A Struggle for Power: The American Revolution": {
+    "id": 2,
+    "author": "Theodore Draper",
+    "genre": "history",
+    "length": 560,
+    "hasEbook": false,
+    "cover_url": "https://images-na.ssl-images-amazon.com/images/I/51T5nXmWYgL.jpg",
+    "purchase_url": "https://www.amazon.com/dp/0679776427"
+  },
+  "The Long Dark Tea-Time of the Soul": {
+    "id": 3,
+    "author": "Douglas Adams",
+    "genre": "fiction",
+    "length": 320,
+    "hasEbook": true,
+    "cover_url": "https://images-na.ssl-images-amazon.com/images/I/51B5ocuBH8L.jpg",
+    "purchase_url": "https://www.amazon.com/dp/0671742515"
+  },
+  "The Expanding Blaze: How the American Revolution Ignited the World": {
+    "id": 4,
+    "author": "Jonathan Israel",
+    "genre": "history",
+    "length": 768,
+    "hasEbook": true,
+    "cover_url": "https://images-na.ssl-images-amazon.com/images/I/91GQC6SeqCL.jpg",
+    "purchase_url": "https://www.amazon.com/dp/0691176604"
+  },
+  "Altered Carbon": {
+    "id": 5,
+    "author": "Richard K. Morgan",
+    "genre": "scifi",
+    "length": 375,
+    "hasEbook": true,
+    "cover_url": "https://images-na.ssl-images-amazon.com/images/I/51Pp57ytuhL.jpg",
+    "purchase_url": "https://www.amazon.com/dp/0345457684"
+  },
+  "The Enlightenment: The Rise of Modern Paganism (Vol. 1)": {
+    "id": 6,
+    "author": "Peter Gay",
+    "genre": "history",
+    "length": 592,
+    "hasEbook": false,
+    "cover_url": "https://images-na.ssl-images-amazon.com/images/I/91zSt6QkbmL.jpg",
+    "purchase_url": "https://www.amazon.com/dp/0393313026"
   }
 }

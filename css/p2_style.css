@@ -18,3 +18,13 @@ label, legend {
     margin-bottom: 0;
 }
 
+.card {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.btn, .alert {
+    margin-top: 20px;
+}
