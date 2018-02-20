@@ -15,6 +15,8 @@ require 'index-logic.php';
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/p2_style.css">
+    <!-- Validation logic -->
+    <script type="text/javascript" src="js/validate.js"></script>
 </head>
 <body>
 <!-- Navigation -->
@@ -60,7 +62,8 @@ require 'index-logic.php';
         </div>
         <div class='form-group'>
             <label>Specify your maximum length in pages:
-                <input type='text' name='pageLimit' class='form-control'
+                <input type='text' name='pageLimit' class='form-control' id='pageLimitInput'
+                       oninput='validateInput(this.value)'
                        value='<?= ($pageLimit == '') ? 0 : $pageLimit ?>'>
             </label>
         </div>
