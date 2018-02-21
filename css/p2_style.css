@@ -17,6 +17,10 @@
     text-align: center;
 }
 
+#checkbox {
+    margin-left:22px;
+}
+
 img {
     margin: 20px 0px;
 }

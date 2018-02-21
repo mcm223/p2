@@ -70,9 +70,11 @@ require 'index-logic.php';
             </label>
         </div>
         <div class='form-group'>
-            <label><input type='checkbox' class='form-check-input' name='ebook'
-                          value='true' <?= ($ebook == 'true') ? 'checked' : '' ?>> Exclude
-                books without ebook version?</label>
+            <div id='checkbox'>
+                <label><input type='checkbox' class='form-check-input' name='ebook'
+                              value='true' <?= ($ebook == 'true') ? 'checked' : '' ?>> Exclude
+                    books without ebook version?</label>
+            </div>
             <div id='submit'>
                 <input type='submit' value='Get Me a Date!' class='btn btn-primary btn-md'>
             </div>
