@@ -40,9 +40,11 @@ require 'index-logic.php';
 </div>
 <div class="container-fluid" id="container">
     <h4>How Does it Work?</h4>
-    <div id="bio">
+    <div id="intro">
         <p>
-            Enter your desired book traits below, and then hit search. The result will be a new book for you to try.
+            Enter your desired book traits below and hit "Get Me a Date!" to generate the semi-random book of your
+            dreams. This application was inspired by a Valentine's Day promotion at <a
+                href='http://www.belmontbooks.com/' target='_blank'>Belmont Books</a>.
         </p>
     </div>
     <!-- Start user input section -->
@@ -61,7 +63,7 @@ require 'index-logic.php';
             </select>
         </div>
         <div class='form-group'>
-            <label>Specify your maximum length in pages:
+            <label>Specify your maximum length in pages (enter 0 for no limit):
                 <input type='text' name='pageLimit' class='form-control' id='pageLimitInput'
                        oninput='validateInput(this.value)'
                        value='<?= ($pageLimit == '') ? 0 : $pageLimit ?>'>
