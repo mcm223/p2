@@ -4,7 +4,7 @@
 
 ## Outside resources
 + [Bootstrap CSS framework](https://getbootstrap.com/) to simplify the styling.
-+ Book icon is from [Icon Archive](http://www.iconarchive.com/show/circle-icons-by-martz90/books-icon.html)
++ Book icon is from [Icon Archive](http://www.iconarchive.com/show/circle-icons-by-martz90/books-icon.html).
 + Form.php class provided in the class materials.
 + Book.php class provided in the class materials. I extended it to suit the needs of this project.
 + helpers.php file provided in the class materials.
@@ -14,7 +14,7 @@
 This idea was inspired a high school friend and employee of [Belmont Books](http://www.belmontbooks.com/), a local bookstore in Belmont, MA.
 She wrapped books in opaque paper and offered them for sale as a "Blind Date with a Book" for Valentine's Day.
 I liked the idea and decided to adapt it into a web app that suggests a new book to read based on a user's 
-preferences. 
+general preferences. 
 
  
 
