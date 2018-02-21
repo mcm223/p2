@@ -1,19 +1,14 @@
 <?php
 require 'Book.php';
-require 'Forms.php';
+require 'ProcessBook.php';
+require 'Form.php';
 
-/**
- * Created by PhpStorm.
- * User: Matt McGrath
- * Date: 2/17/18
- */
-
-use DWA\Book;
+use DWA\ProcessBook;
 use DWA\Form;
 
 # Instantiate book and form objects
 $form = new Form($_GET);
-$book = new Book('books.json');
+$book = new ProcessBook('books.json');
 
 # Variables
 $potentialBooks = [];
