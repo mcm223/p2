@@ -4,7 +4,6 @@ require 'index-logic.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<link rel="icon" href="images/books-icon.png">
 <head>
     <title>Blind Date with a Book</title>
     <!-- Required meta tags -->
@@ -15,8 +14,9 @@ require 'index-logic.php';
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/p2_style.css">
+    <link rel="icon" href="images/books-icon.png">
     <!-- Validation logic -->
-    <script type="text/javascript" src="js/validate.js"></script>
+    <script src="js/validate.js"></script>
 </head>
 <body>
 <!-- Navigation -->
