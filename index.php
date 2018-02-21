@@ -66,7 +66,7 @@ require 'index-logic.php';
             <label>Specify your maximum length in pages (enter 0 for no limit):
                 <input type='text' name='pageLimit' class='form-control' id='pageLimitInput'
                        oninput='validateInput(this.value)'
-                       value='<?= ($pageLimit == '') ? 0 : $pageLimit ?>'>
+                       value='<?= $form->prefill('pageLimit',0, true) ?>'>
             </label>
         </div>
         <div class='form-group'>
