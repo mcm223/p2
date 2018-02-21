@@ -1,7 +1,7 @@
 // Validation for text input
 function validateInput(value) {
     var pageLimitInput = document.getElementById('pageLimitInput');
-    if (!value || isNaN(value) || value < 0) {
+    if (!value || isNaN(value) || value < 0 || value.indexOf('.') >= 0) {
         pageLimitInput.focus();
         pageLimitInput.style.background = '#ff9999';
     } else {
